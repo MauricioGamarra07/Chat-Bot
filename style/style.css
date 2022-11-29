@@ -27,7 +27,15 @@
     top: 40%;
     left: 35%;
 }
-
+.card{
+    background-color: gold;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.title{
+    text-align: center;
+    color: white;
+}
 .cont-icono {
     position: fixed;
     bottom: 10%;
@@ -77,8 +85,8 @@
     color: white;
     position: absolute;
     right: 0;
-    width: 27%;
-    height: 90%;
+    width: 360px;
+    height: 90vh;
     border-radius: 15px;
     padding: 0 10px;
     margin-top: 2%;
@@ -86,7 +94,7 @@
 }
 .chat{
     position: relative;
-    height: 80%;
+    height: 73vh;
     margin-bottom: 10px;
     background-image: url(../images/fondo_whatsapp.jpg);
 }
@@ -108,23 +116,52 @@
 .cuerpo-chat{
     height: 80%;
     padding: 10px;
+    overflow: auto;
 }
-.mensaje1{
+.mensaje-bot{
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+.tri-izq{
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    background-color: lightgray;
+}
+.texto{
     background-color: lightgray;
     color: black;
     width: 80%;
     border-radius: 10px;
-    padding: 10px;
-    margin-left: 15px;
+    padding: 10px 20px;
+    margin-left: 10px;
 }
-.mensaje2{
-    background-color: lightgray;
+.respuesta{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.tri-der{
+    position: absolute;
+    top: 15px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    background-color: coral;
+}
+.texto-resp{
+    background-color: coral;
     color: black;
     width: 80%;
     border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 15px;
+    padding: 10px 20px;
+    margin-right: 10px;
 }
 .marcar{
     display: flex;
@@ -141,4 +178,10 @@
     position: absolute;
     bottom: 0;
     right: 10px;
+}
+.final-cel{
+    transform: translateY(-8px);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
