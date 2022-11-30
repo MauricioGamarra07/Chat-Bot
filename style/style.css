@@ -38,7 +38,7 @@
 }
 .cont-icono {
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     right: 3%;
     background-color: rgb(68, 204, 41);
     border-radius: 50%;
@@ -72,7 +72,7 @@
 }
 .modal-chat{
     position: fixed;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.3);
     top: 0;
     left: 0;
     right: 0;
@@ -91,6 +91,12 @@
     padding: 0 10px;
     margin-top: 2%;
     margin-right: 12%;
+}
+@media (max-width: 450px){
+    .cont-chat{
+        width: 90%;
+        margin-right: 20px;
+    }
 }
 .chat{
     position: relative;
@@ -178,6 +184,7 @@
     position: absolute;
     bottom: 0;
     right: 10px;
+    cursor: pointer;
 }
 .final-cel{
     transform: translateY(-8px);
